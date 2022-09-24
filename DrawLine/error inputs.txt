@@ -1,0 +1,2 @@
+error inputs:
+(x+1)+2=6

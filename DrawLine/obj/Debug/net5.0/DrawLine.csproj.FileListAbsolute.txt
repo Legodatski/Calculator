@@ -1,0 +1,16 @@
+E:\Programmes\DrawLine\bin\Debug\net5.0\DrawLine.exe
+E:\Programmes\DrawLine\bin\Debug\net5.0\DrawLine.deps.json
+E:\Programmes\DrawLine\bin\Debug\net5.0\DrawLine.runtimeconfig.json
+E:\Programmes\DrawLine\bin\Debug\net5.0\DrawLine.runtimeconfig.dev.json
+E:\Programmes\DrawLine\bin\Debug\net5.0\DrawLine.dll
+E:\Programmes\DrawLine\bin\Debug\net5.0\DrawLine.pdb
+E:\Programmes\DrawLine\obj\Debug\net5.0\DrawLine.csproj.AssemblyReference.cache
+E:\Programmes\DrawLine\obj\Debug\net5.0\DrawLine.GeneratedMSBuildEditorConfig.editorconfig
+E:\Programmes\DrawLine\obj\Debug\net5.0\DrawLine.AssemblyInfoInputs.cache
+E:\Programmes\DrawLine\obj\Debug\net5.0\DrawLine.AssemblyInfo.cs
+E:\Programmes\DrawLine\obj\Debug\net5.0\DrawLine.csproj.CoreCompileInputs.cache
+E:\Programmes\DrawLine\obj\Debug\net5.0\DrawLine.dll
+E:\Programmes\DrawLine\obj\Debug\net5.0\refint\DrawLine.dll
+E:\Programmes\DrawLine\obj\Debug\net5.0\DrawLine.pdb
+E:\Programmes\DrawLine\obj\Debug\net5.0\DrawLine.genruntimeconfig.cache
+E:\Programmes\DrawLine\obj\Debug\net5.0\ref\DrawLine.dll
