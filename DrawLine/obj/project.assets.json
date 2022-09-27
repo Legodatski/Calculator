@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Programmes\\DrawLine\\DrawLine.csproj",
+      "projectUniqueName": "E:\\Repositories\\Calculator\\DrawLine\\DrawLine.csproj",
       "projectName": "DrawLine",
-      "projectPath": "E:\\Programmes\\DrawLine\\DrawLine.csproj",
+      "projectPath": "E:\\Repositories\\Calculator\\DrawLine\\DrawLine.csproj",
       "packagesPath": "C:\\Users\\IVO\\.nuget\\packages\\",
-      "outputPath": "E:\\Programmes\\DrawLine\\obj\\",
+      "outputPath": "E:\\Repositories\\Calculator\\DrawLine\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\IVO\\AppData\\Roaming\\NuGet\\NuGet.Config",

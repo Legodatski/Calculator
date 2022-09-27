@@ -165,69 +165,35 @@ namespace DrawLine
 
         private static string[] MutiplyDivision(string[] input)
         {
-            string[] sings =
+            List<string> output = input.ToList();
+
+            while (output.Contains("*") || output.Contains("*"))
             {
-                "/",
-                "^",
-                "*"
-            };
+                int index = output.IndexOf(output.FirstOrDefault(x => x == "*" || x == "/"));
 
-            if (!input.Any(x => sings.Contains(x)))
-                return input;            
+                decimal n1 = decimal.Parse(output[index - 1]),
+                    n2 = decimal.Parse(output[index + 1]),
+                    result = 1;
 
-            List<string> output = new List<string>();
-            string[] tempInput = input;
-
-            while (true)
-            {
-                //index of *, / or ^
-                int index = Array.IndexOf(tempInput, tempInput.First(x => sings.Contains(x)));
-
-                //numbers to calculate
-                decimal n1 = decimal.Parse(tempInput[index - 1]),
-                    n2 = decimal.Parse(tempInput[index + 1]);
-
-                decimal result = 1;
-
-                //calculating numbers
-                switch (tempInput[index])
+                switch (output[index])
                 {
-                    case "/":
-                        result = n1 / n2;
-                        break;
                     case "*":
                         result = n1 * n2;
                         break;
-                    case "^":
-                        for (int i = 0; i < n2; i++)
-                        {
-                            result *= n1; 
-                        }
+                    case "/":
+                        result = n1 / n2;
                         break;
                 }
 
-                //add to the output
-                for (int i = 0; i < tempInput.Length; i++)
-                {
-                    if (i == index - 1)
-                    {
-                        i += 2;
-                        output.Add(result.ToString());
-                    }
-                    else
-                    {
-                        output.Add(tempInput[i]);
-                    }
-                }
+                //update the list
+                output[index] = result.ToString();
 
-                tempInput = output.ToArray();
+                output.RemoveAt(index + 1);
+                output.RemoveAt(index - 1);
 
-                //end
-                if (!tempInput.Contains("/") || !tempInput.Contains("*"))
-                {
-                    return output.ToArray();
-                }
             }
+
+            return output.ToArray();
         }
 
         private static string[][] ValidateEquation(string[] input)
