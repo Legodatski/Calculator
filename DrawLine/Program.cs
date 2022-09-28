@@ -167,7 +167,7 @@ namespace DrawLine
         {
             List<string> output = input.ToList();
 
-            while (output.Contains("*") || output.Contains("*"))
+            while (output.Contains("*") || output.Contains("/"))
             {
                 int index = output.IndexOf(output.FirstOrDefault(x => x == "*" || x == "/"));
 
